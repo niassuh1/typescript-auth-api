@@ -1,0 +1,28 @@
+### Register an account
+
+POST http://localhost:3030/auth/register
+Content-Type: application/json
+
+{
+    "user": {
+        "name": "JohnDoe",
+        "password": "password"
+    }
+}
+
+### Login to get token
+
+POST http://localhost:3030/auth/login
+Content-Type: application/json
+
+{
+    "user": {
+        "name": "JohnDoe",
+        "password": "password"
+    }
+}
+
+### Get user details
+
+GET http://localhost:3030/auth/user
+Authorization: Bearer [TOKEN FROM auth/login HERE]
