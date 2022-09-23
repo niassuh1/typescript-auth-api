@@ -17,7 +17,7 @@ yarn install
 ## JavaScript compilation
 
 ```bash
-yarn building
+yarn build
 ```
 
 ## Running
